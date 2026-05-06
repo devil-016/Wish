@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ❤️ PASSWORD SCREEN -->
+<div id="screen1" class="screen active">
+  <div class="hearts"></div>
+  <div class="box">
+    <h1>💖 Enter My Heart 💖</h1>
+    <input type="password" id="password" placeholder="Enter secret password">
+    <button onclick="checkPassword()">Unlock Love</button>
+  </div>
+</div>
+
+<!-- 🍰 CAKE SCREEN -->
+<div id="screen2" class="screen">
+  <h1>🎉 Happy Birthday My Love 🎉</h1>
+
+  <div class="cake" onclick="cutCake()">
+  <div class="half left">
+    <img src="cake.png">
+  </div>
+
+  <div class="half right">
+    <img src="cake.png">
+  </div>
+
+  <div class="knife"></div>
+</div>
+
+  <p id="cakeText">Tap the cake to cut it 🎂</p>
+
+  <button onclick="document.getElementById('screen3').classList.add('active')">
+   Next💌
+</button>
+
+  <canvas id="fireworks"></canvas>
+</div>
+
+<!-- 💌 LOVE LETTER -->
+<div id="screen3" class="screen">
+  <div class="letter">
+    <h1>💌 My Love</h1>
+    <p>
+      Happy Birthday My Love ❤️<br><br>
+      From the moment you came into my life, everything became more beautiful.
+      Your smile is my favorite view, your voice is my favorite sound,
+      and your happiness means everything to me.<br><br>
+
+      Today is your special day, and I just want you to know
+      how deeply I love you and how lucky I am to have you.<br><br>
+
+      I promise to stand by you, love you, and make you smile forever 💖<br><br>
+
+      Yours always,<br>
+      ❤️ Your Love ❤️
+    </p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
